@@ -3,8 +3,8 @@
     type="icon"
     @click="toggleColorMode"
   >
-    <LightIcon v-if="colorMode.preference === 'dark'" />
-    <DarkIcon v-if="colorMode.preference === 'light'" />
+    <LightIcon v-if="colorMode.value === 'dark'" />
+    <DarkIcon v-if="colorMode.value === 'light'" />
   </Button>
 </template>
 
@@ -15,6 +15,6 @@ import DarkIcon from "@/components/Icons/DarkIcon.vue"
 const colorMode = useColorMode()
 
 const toggleColorMode = () => {
-  colorMode.preference = colorMode.preference === "light" ? "dark" : "light"
+  colorMode.value = colorMode.value === "light" ? "dark" : "light"
 }
 </script>
