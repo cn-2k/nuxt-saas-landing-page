@@ -15,6 +15,16 @@ import DarkIcon from "@/components/Icons/DarkIcon.vue"
 const colorMode = useColorMode()
 
 const toggleColorMode = () => {
-  colorMode.value = colorMode.value === "light" ? "dark" : "light"
+  if (colorMode.value === "light") {
+    setColorMode("dark")
+  }
+  else {
+    setColorMode("light")
+  }
+}
+
+const setColorMode = (mode: "light" | "dark") => {
+  colorMode.value = mode
+  colorMode.preference = mode
 }
 </script>

@@ -86,12 +86,12 @@ import LinkButton from "@/components/Button/LinkButton.vue"
 
 const menu = [
   {
-    title: "Learn",
-    href: "#",
+    title: "Home",
+    href: "/",
   },
   {
     title: "About",
-    href: "#",
+    href: "/about",
   },
   {
     title: "Download",
