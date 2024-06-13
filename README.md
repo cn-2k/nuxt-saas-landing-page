@@ -1,75 +1,47 @@
-# Nuxt 3 Minimal Starter
+#  Nuxt 3 SaaS/Software Landing Page
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A modern, simple Nuxt 3 landing page for your next software/SaaS project!
 
-## Setup
+Light Mode:
+![Captura de tela de 2024-06-13 10-24-03](https://github.com/cn-2k/nuxt-saas-landing-page/assets/59366705/9e106e7d-b069-4b25-89e3-42a50c6dcc46)
+
+Dark Mode:
+![Captura de tela de 2024-06-13 10-26-52](https://github.com/cn-2k/nuxt-saas-landing-page/assets/59366705/90b388f9-cfb3-4fb5-9ff8-52e4955b34b0)
+
+
+### Links
+
+- Live Site URL: https://nuxt-saas-landing-page.vercel.app/
+
+### Built with
+
+- Mobile-first workflow
+- [TailwindCSS](https://tailwindcss.com/) - Utility-first CSS classes
+- [Vue.js](https://vuejs.org/) - JS library
+- [Nuxt 3](https://nuxt.com/) - Vue framework
+
+
+## 🔧 Clone and Run
 
 Make sure to install the dependencies:
 
 ```bash
+# yarn
+yarn install
+
 # npm
 npm install
 
 # pnpm
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+Start the development server on `http://localhost:3000`
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+## Author
 
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- Dev.to - [@cn-2k](https://dev.to/cn-2k)
