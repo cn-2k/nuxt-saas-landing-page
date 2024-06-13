@@ -1,7 +1,20 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   css: ["@/assets/css/base.css"],
-  modules: ["@nuxtjs/tailwindcss", "@nuxt/eslint", "@nuxtjs/color-mode"],
+  app: {
+    head: {
+      title: "Nuxt 3 SaaS Starter",
+    },
+  },
+  site: {
+    url: "https://nuxt-saas-landing-page.vercel.app/",
+  },
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@nuxt/eslint",
+    "@nuxtjs/color-mode",
+    "nuxt-og-image",
+  ],
   eslint: {
     config: {
       stylistic: {
