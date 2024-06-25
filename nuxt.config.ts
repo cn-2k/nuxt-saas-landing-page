@@ -4,6 +4,9 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "Nuxt 3 SaaS Starter",
+      htmlAttrs: {
+        lang: "en",
+      },
     },
   },
   site: {

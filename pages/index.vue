@@ -9,7 +9,7 @@
           </p>
           <h1 class="mb-6 max-w-lg text-5xl font-bold leading-snug tracking-tight dark:text-white text-black sm:text-5xl sm:leading-snug">
             We make you look
-            <span class="my-1 inline-block border-b-8 dark:border-white border-green-200 bg-green-500 px-4 font-bold text-white rounded-lg">different</span>
+            <span class="my-1 inline-block border-b-8 dark:border-green-500 border-green-400 bg-green-200 px-4 font-bold text-black rounded-lg">different</span>
           </h1>
           <p class="text-lg text-gray-800 dark:text-white">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam quibusdam perferendis dicta fugiat consequatur, natus laboriosam culpa distinctio iusto consequuntur totam labore inventore neque tempora magnam quos minima asperiores accusantium?

@@ -1,6 +1,7 @@
 <template>
   <Button
     type="icon"
+    aria-label="Toggle color mode"
     @click="toggleColorMode"
   >
     <LightIcon v-if="colorMode.value === 'dark'" />

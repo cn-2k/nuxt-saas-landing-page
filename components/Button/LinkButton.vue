@@ -1,9 +1,10 @@
 <template>
   <NuxtLink
-    :to="props.to"
     :target="props.isExternal ? '_blank' : undefined"
     class="flex items-center gap-2 text-slate-600 dark:text-slate-200 cursor-pointer"
     :class="linkClass"
+    aria-label="Link"
+    :href="props.to ?? '#'"
   >
     <slot /> <NavIcon v-if="props.isExternal" />
   </NuxtLink>

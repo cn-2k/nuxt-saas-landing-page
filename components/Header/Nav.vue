@@ -17,6 +17,7 @@
 
         <Button
           type="icon"
+          aria-label="Toggle language"
         >
           <TranslateIcon />
         </Button>
@@ -87,27 +88,33 @@ import LinkButton from "@/components/Button/LinkButton.vue"
 const menu = [
   {
     title: "Home",
+    label: "Home",
     href: "/",
   },
   {
     title: "About",
+    label: "About",
     href: "/about",
   },
   {
     title: "Download",
+    label: "Download",
     href: "#",
   },
   {
     title: "Blog",
+    label: "Blog",
     href: "#",
   },
   {
     title: "Docs",
+    label: "Docs",
     href: "#",
     isExternal: true,
   },
   {
     title: "Certification",
+    label: "Certification",
     href: "#",
     isExternal: true,
   },
