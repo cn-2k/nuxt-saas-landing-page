@@ -1,5 +1,7 @@
 #  Nuxt 3 SaaS/Software Landing Page
 
+![Captura de tela de 2024-08-17 19-51-42](https://github.com/user-attachments/assets/076dc4fa-01fc-4073-b4b8-73072c4326f7)
+
 A modern, simple Nuxt 3 landing page for your next software/SaaS project!
 
 Light Mode:
