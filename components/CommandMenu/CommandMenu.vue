@@ -29,7 +29,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onBeforeUnmount } from "vue"
+import { ref } from "vue"
 import Modal from "@/components/Modal/Modal.vue"
 import SearchIcon from "@/components/Icons/SearchIcon.vue"
 
@@ -39,18 +39,11 @@ const toggleModal = () => {
   showModal.value = !showModal.value
 }
 
-const handleKeydown = (event: KeyboardEvent) => {
-  if (event.ctrlKey && event.key === "k") {
-    event.preventDefault()
-    toggleModal()
-  }
-}
-
-onMounted(() => {
-  window.addEventListener("keydown", handleKeydown)
-})
-
-onBeforeUnmount(() => {
-  window.removeEventListener("keydown", handleKeydown)
+defineShortcuts({
+  meta_k: {
+    handler: () => {
+      toggleModal()
+    },
+  },
 })
 </script>
