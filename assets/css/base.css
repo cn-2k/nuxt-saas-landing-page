@@ -27,7 +27,3 @@
   --bg-secondary: #eae0c9;
   --border-color: #ded0bf;
 }
-
-body {
-  @apply bg-white dark:bg-gray-950 dark:text-gray-200 transition-colors antialiased;
-}

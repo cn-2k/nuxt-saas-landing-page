@@ -1,10 +1,27 @@
 <template>
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
+  <div>
+    <NuxtLoadingIndicator />
+
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
+  </div>
 </template>
 
 <script setup lang="ts">
+useHead({
+  meta: [
+    { charset: "utf-8" },
+    { name: "viewport", content: "width=device-width, initial-scale=1" },
+  ],
+  bodyAttrs: {
+    class: "bg-white dark:bg-gray-950 dark:text-gray-200 transition-colors antialiased;",
+  },
+  htmlAttrs: {
+    lang: "en",
+  },
+})
+
 useSeoMeta({
   title: "Nuxt 3 SaaS Starter",
   ogTitle: "Nuxt 3 SaaS Starter",

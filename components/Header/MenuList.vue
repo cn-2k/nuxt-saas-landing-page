@@ -1,6 +1,6 @@
 <template>
   <ul
-    class="flex gap-6"
+    class="flex"
     :class="props.isCol ? 'flex-col' : 'flex-row'"
   >
     <li
@@ -8,6 +8,7 @@
       :key="item.title"
     >
       <LinkButton
+        type="bg"
         :to="item.href"
         :is-external="item.isExternal"
       >

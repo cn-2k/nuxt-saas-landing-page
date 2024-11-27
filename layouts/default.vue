@@ -1,7 +1,14 @@
 <template>
-  <div class="relative h-screen w-full bg-background overflow-x-hidden 2xl:overflow-hidden flex flex-col">
-    <!-- Background Pattern -->
-    <div class="absolute inset-0 z-0 flex items-center justify-center">
+  <div>
+    <Nav />
+    <MainContent>
+      <slot />
+    </MainContent>
+    <Footer />
+    <div
+      v-if="$route.path === '/'"
+      class="absolute inset-0 -z-10 flex items-center justify-center"
+    >
       <div class="w-80 h-80 bg-green-500 rounded-full mt-52 lg:mt-28 opacity-90 dark:opacity-60 blur-[120px]" />
       <ClientOnly>
         <DotPattern
@@ -10,14 +17,6 @@
           )"
         />
       </ClientOnly>
-    </div>
-    <!-- Slot content -->
-    <div class="relative z-10 flex flex-col h-full">
-      <Nav class="flex-shrink-0" />
-      <div class="flex-grow h-min p-5">
-        <slot />
-      </div>
-      <Footer class="flex-shrink-0" />
     </div>
   </div>
 </template>
