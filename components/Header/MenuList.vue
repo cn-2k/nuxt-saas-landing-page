@@ -1,6 +1,6 @@
 <template>
   <ul
-    class="flex"
+    class="flex gap-2"
     :class="props.isCol ? 'flex-col' : 'flex-row'"
   >
     <li
@@ -9,7 +9,7 @@
     >
       <LinkButton
         type="bg"
-        :to="item.href"
+        :href="item.href"
         :is-external="item.isExternal"
       >
         {{ item.title }}
@@ -23,7 +23,7 @@ import LinkButton from "@/components/Button/LinkButton.vue"
 
 interface MenuItemProps {
   title: string
-  href: string
+  href?: string
   isExternal?: boolean
 }
 

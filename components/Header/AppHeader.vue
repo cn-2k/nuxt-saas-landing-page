@@ -2,32 +2,38 @@
   <div>
     <nav class="w-full bg-white dark:bg-gray-950 justify-between flex border-b border-gray-200 dark:border-gray-600/60 px-8 py-3.5 transition-colors">
       <div class="flex gap-10 items-center">
-        <span class="cursor-pointer font-bold text-xl tracking-tighter">✨</span>
-        <MenuList
-          class="hidden lg:flex"
-          :items="menu"
-        />
+        <slot name="logo">
+          <span class="cursor-pointer font-bold text-xl tracking-tighter">✨</span>
+        </slot>
+        <slot name="links">
+          <MenuList
+            class="hidden lg:flex"
+            :items="menu"
+          />
+        </slot>
       </div>
 
       <div class="hidden lg:flex gap-2">
-        <ClientOnly>
-          <CommandMenu />
-          <ColorModePicker />
-        </ClientOnly>
+        <slot name="right">
+          <ClientOnly>
+            <CommandMenu />
+            <ColorModePicker />
+          </ClientOnly>
 
-        <Button
-          type="icon"
-          aria-label="Toggle language"
-        >
-          <TranslateIcon />
-        </Button>
+          <Button
+            type="icon"
+            aria-label="Toggle language"
+          >
+            <TranslateIcon />
+          </Button>
 
-        <LinkButton
-          type="bg"
-          to="https://github.com/cn-2k/nuxt-saas-landing-page"
-        >
-          <GithubIcon />
-        </LinkButton>
+          <LinkButton
+            type="bg"
+            to="https://github.com/cn-2k/nuxt-saas-landing-page"
+          >
+            <GithubIcon />
+          </LinkButton>
+        </slot>
       </div>
 
       <div class="flex lg:hidden">
@@ -99,23 +105,20 @@ const menu = [
   {
     title: "Download",
     label: "Download",
-    href: "#",
   },
   {
     title: "Blog",
     label: "Blog",
-    href: "#",
   },
   {
     title: "Docs",
     label: "Docs",
-    href: "#",
+    href: "https://www.google.com.br",
     isExternal: true,
   },
   {
     title: "Certification",
     label: "Certification",
-    href: "#",
     isExternal: true,
   },
 ]

@@ -1,5 +1,5 @@
 <template>
-  <PageSection>
+  <div class="flex flex-col md:flex-row w-full justify-center items-center gap-8 sm:gap-32 md:gap-16">
     <div class="flex max-w-[500px] flex-1 flex-col gap-8">
       <p class="flex text-sm uppercase dark:text-gray-300 text-gray-800">
         ✨
@@ -38,5 +38,5 @@
         Write some <span class="font-bold text-green-400">fancy text</span> here!
       </p>
     </div>
-  </PageSection>
+  </div>
 </template>

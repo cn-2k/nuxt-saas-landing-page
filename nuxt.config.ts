@@ -8,6 +8,7 @@ export default defineNuxtConfig({
         lang: "en",
       },
     },
+    pageTransition: { name: "page", mode: "out-in" },
   },
   site: {
     url: "https://nuxt-saas-landing-page.vercel.app/",

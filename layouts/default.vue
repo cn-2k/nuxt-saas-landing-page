@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <Nav />
+  <div class="flex flex-col min-h-screen">
+    <AppHeader />
     <MainContent>
       <slot />
     </MainContent>
@@ -23,7 +23,7 @@
 
 <script setup lang="ts">
 import clsx from "clsx"
-import Nav from "@/components/Header/Nav.vue"
 import Footer from "@/components/Footer/Footer.vue"
 import DotPattern from "@/components/BackgroundPatterns/DotPattern.vue"
+import AppHeader from "~/components/Header/AppHeader.vue"
 </script>
